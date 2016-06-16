@@ -21,11 +21,11 @@ export default class TaskInput extends Component {
           placeholder="Search"/>
         <hr/>
         <input type="text"
-          refs="title"
+          ref="title"
           placeholder="Task"/>
         <input type="text"
           defaultValue="whoaDefault"
-          refs="descript"
+          ref="descript"
           placeholder="Description"/>
       </div>
     )
