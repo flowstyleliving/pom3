@@ -1,7 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export default class Task extends Component {
-  render() {
-    return <li>{this.props.task.title} {this.props.task.descript}</li>
-  }
-}
+const Task = ({task}) =>
+      <li>{task.title} {task.descript}</li>
+
+export default Task
