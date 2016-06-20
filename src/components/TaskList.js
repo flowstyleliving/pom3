@@ -14,8 +14,8 @@ export default class TaskList extends Component {
     })
   }
   render() {
-    let filteredTasks = this.props.tasks.filter((task) => {
-      return task.title.indexOf(this.state.search) !== -1
+    let filteredTasks = this.props.tasks.toLowerCase().filter((task) => {
+      return task.title.toLowerCase().indexOf(this.state.search) !== -1
     })
     return (
       <div>
